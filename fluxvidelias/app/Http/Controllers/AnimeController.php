@@ -13,7 +13,7 @@ class AnimeController extends Controller
 
     public function index()
     {
-
+       
         $animes=Anime::orderBy('release_year','DESC')
 
                        ->orderBy('title', 'ASC')->simplepaginate(5);
@@ -25,8 +25,8 @@ class AnimeController extends Controller
 
     public function create()
     {
-        $studio= Studio::get();
-        return view('animes.create', compact('studio'));
+        $studios= Studio::get();
+        return view('animes.create', compact('studios'));
     }
 
 
