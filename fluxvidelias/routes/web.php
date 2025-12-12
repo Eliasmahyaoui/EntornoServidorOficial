@@ -7,10 +7,16 @@ use App\Http\Controllers\MovieController;
 use App\Http\Controllers\StudioController;
 use App\Http\Controllers\AnimeController;
 use App\Http\Controllers\CharacterController;
+use App\Http\Controllers\RickMortyController;
 use Illuminate\Support\Facades\Route;
 
 //Ruta  de una accion
 Route::get('/', IndexController::class)->name('inicio');
+
+
+//Ruta normal
+Route::get('getCharacter', [RickMortyController::class,'getCharacter'])->name('getCharacter');
+
 
 //Ruta de tipo recurso
 Route::resource('actors',ActorController::class);
