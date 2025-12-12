@@ -15,9 +15,7 @@ class RickMortyController extends Controller
                         ->map(fn($item)=>(object) $item);
 
 
-        do {
-            # code...
-        } while ($characters <= 10);
+        
 
 
 

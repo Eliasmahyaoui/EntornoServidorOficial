@@ -10,10 +10,10 @@
 @foreach ($characters as $character  )
 
     {{$character->name}}
-    {{$character->image}}
-
+     <br>
     <img src="{{$character->image}}"alt="Imagen">
-    
+
+
 @endforeach
 
 
