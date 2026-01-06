@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-<h1>Welcome to migraciones</h1>
+<h1>Welcome to migraciones baby!</h1>
 @endsection

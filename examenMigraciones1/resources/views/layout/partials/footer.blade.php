@@ -1,5 +1,5 @@
 
 <footer>
-    <a href="#faq"> faq</a>
-    <a href="#cookies">cookies</a>
+    <a href="{{route('faq')}}">FAQ</a>
+    <a href="{{route('cookies')}}">Cookies</a>
 </footer>
