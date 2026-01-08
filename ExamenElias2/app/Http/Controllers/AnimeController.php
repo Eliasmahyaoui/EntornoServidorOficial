@@ -4,15 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Anime;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class AnimeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index():View
     {
-        //
+        $animes = Anime::orderBy('release_year', 'desc')
+            ->orderBy('title', 'asc')
+            ->get();
+
+        return view('Anime.index', compact('animes'));
     }
 
     /**
@@ -36,7 +41,7 @@ class AnimeController extends Controller
      */
     public function show(Anime $anime)
     {
-        //
+        return view('Anime.show', compact('anime'));
     }
 
     /**

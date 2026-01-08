@@ -12,8 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('anime_character', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->foreignId('anime_id')
+                ->constrained('animes')
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
+            $table->foreignId('character_id')
+                ->constrained('characters')
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
+            $table->unique(['anime_id', 'character_id']);
+            $table->index('character_id');
         });
     }
 

@@ -14,6 +14,11 @@
         <a href="{{route('subjects.index')}}">Ver asignaturas</a>
         <a href="{{route('subjects.show',123)}}">Ver asignaturas 123</a>
         <a href="{{route('subjects.create')}}">Añadir asignatura</a>
+
+        <a href="{{route('Anime.index')}}">Ver animes</a>
+        <a href="{{route('Character.index')}}">Ver animes</a>
+
+
     </nav>
 
     @yield('content')

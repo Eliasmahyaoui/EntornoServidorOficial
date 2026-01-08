@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('studios', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 100)->unique();
+            $table->year('founded_year')->nullable();
+            $table->string('country', 100)->nullable();
+            $table->string('website', 255)->nullable();
             $table->timestamps();
+            $table->index('country');
         });
     }
 

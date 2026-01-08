@@ -12,7 +12,7 @@ class CharacterController extends Controller
      */
     public function index()
     {
-        //
+        return view('Character.index');
     }
 
     /**
@@ -36,7 +36,7 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        //
+        return view('Character.show', compact('character'));
     }
 
     /**
