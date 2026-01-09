@@ -3,11 +3,10 @@
 
 @section('content')
     @foreach ($animes as $anime )
-        <a href="{{route('Anime.show',$anime->id)}}">{{$anime->title}}</a>
-        {{$anime->title}}
-        {{$anime->release_year}}
-        {{$anime->rating}}
-        {{$anime->has_manga}}
+        <a href="{{route('anime.show',$anime->id)}}">{{$anime->title}}</a>
+        <p>Año: {{$anime->release_year}}</p>
+        <p>Ranking: {{$anime->rating}}</p>
+        <p>Tiene manga? {{$anime->has_manga}}</p>
     @endforeach
 
 @endsection

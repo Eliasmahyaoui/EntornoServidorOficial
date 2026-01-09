@@ -31,7 +31,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        $product= new Products();
+        $product = new Products();
 
         $product['name'] = $request->input('name');
         $product['brand'] = $request->input('brand');
@@ -50,17 +50,17 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Products $products)
+    public function show(Products $product)
     {
-        return redirect()->route('products.show', compact('products'));
+        return redirect()->route('products.show', compact('product'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Products $products): View
+    public function edit(Products $product): View
     {
-        return view('products.edit', compact('products'));
+        return view('products.edit', compact('product'));
     }
 
     /**

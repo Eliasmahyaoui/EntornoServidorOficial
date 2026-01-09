@@ -13,8 +13,8 @@
         <a href="{{route('subjects.show',33)}}">Ver asignaturas 33</a>
         <a href="{{route('subjects.create')}}">Añadir asignaturas</a>
 
-        <a href="{{route('Anime.index')}}">Anime</a>
-        <a href="{{route('Character.index')}}">Character</a>
+        <a href="{{route('anime.index')}}">Anime</a>
+        <a href="{{route('character.index')}}">Character</a>
     </nav>
     @yield('content')
 

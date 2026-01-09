@@ -18,6 +18,6 @@ Route::get('privacy', [legalsController::class, 'privacy'])->name('privacy');
 
 Route::resource('subjects', subjectsController::class)->except('edit', 'update');
 
-Route::resource('Studio', StudioController::class);
-Route::resource('Anime', AnimeController::class);
-Route::resource('Character', CharacterController::class);
+Route::resource('studio', StudioController::class);
+Route::resource('anime', AnimeController::class);
+Route::resource('character', CharacterController::class);

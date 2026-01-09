@@ -13,6 +13,8 @@
 <p>Rol: {{$character->role}}</p>
 <p>Descripcion: {{$character->description}}</p>
 
+<a href="{{route('character.index')}}">Volver a la lista de characters</a>
+
 @endsection
 
 

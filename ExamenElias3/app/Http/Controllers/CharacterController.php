@@ -13,7 +13,12 @@ class CharacterController extends Controller
      */
     public function index():View
     {
-        return view('Character.index');
+        $characters= Character::orderBy('name', 'asc')
+                ->get();
+
+        return view('Character.index', compact('characters'));
+
+
     }
 
     /**

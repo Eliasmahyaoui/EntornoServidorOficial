@@ -1,3 +1,5 @@
-<div>
-    <!-- Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi -->
-</div>
+<nav>
+    
+    <a href="{{route('products.index')}}">Ver productos</a>
+    <a href="{{route('products.create')}}">Crear Productos</a>
+</nav>
