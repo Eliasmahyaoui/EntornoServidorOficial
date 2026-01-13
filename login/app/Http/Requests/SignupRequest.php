@@ -25,7 +25,7 @@ class SignupRequest extends FormRequest
         return [
             'username' => ['required', 'string', 'min:5', 'max:20','unique:users'],
             'name' => ['required', 'string', 'min:2', 'max:225'],
-           // 'email' => ['required', 'string', 'min:10', 'max:225','unique:users'],
+           'email' => ['email:rfc,dns'],
             'password' => ['required', 'confirmed', Password::default()],
 
 
