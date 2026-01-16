@@ -9,7 +9,7 @@
         <a href="{{ route('players.index') }}">Players</a>
         <a href="{{ route('events.index') }}">Events</a>
         <a href="{{ route('tienda') }}">Tienda</a>
-        <a href="{{ route('Contacts.index') }}">Contacto</a>
+        <a href="{{ route('contacts.index') }}">Contacto</a>
         <a href="{{ route('dondeEstamos') }}">Donde estamos</a>
 
         <!--Zona con los enlaces de registro /registro/login/logout/cuenta-->
@@ -17,7 +17,7 @@
         <a href="">Login</a>
         <a href="">Logout</a>
         <a href="">Cuenta</a>
-        
+
 
     </nav>
 </div>

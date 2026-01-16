@@ -12,7 +12,7 @@ class ContactController extends Controller
      */
     public function index():View
     {
-        return view('Contacts.index');
+        return view('contacts.index');
     }
 
     /**
@@ -20,31 +20,31 @@ class ContactController extends Controller
      */
     public function create():View
     {
-        return view('Contacts.create');
+        return view('contacts.create');
     }
 
 
     public function store(Request $request):View
     {
-        return view('Contacts.store');
+        return view('contacts.store');
     }
 
 
     public function show(string $id):View
     {
-        return view('Contacts.show', compact('id'));
+        return view('contacts.show', compact('id'));
     }
 
 
     public function edit(string $id):View
     {
-        return view('Contacts.edit');
+        return view('contacts.edit');
     }
 
 
     public function update(Request $request, string $id):View
     {
-        return view('Contacts.update');
+        return view('contacts.update');
     }
 
     /**
@@ -52,6 +52,6 @@ class ContactController extends Controller
      */
     public function destroy(string $id):View
     {
-        return view('Contacts.destroy');
+        return view('contacts.destroy');
     }
 }

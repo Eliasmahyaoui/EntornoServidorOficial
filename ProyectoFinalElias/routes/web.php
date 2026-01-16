@@ -21,7 +21,7 @@ route::get('tienda', StoreController::class)->name('tienda');
 //RuTAS DE VARIOS RECURSOS
 Route::resource('events', EventsController::class);
 Route::resource('players', PlayersController::class);
-Route::resource('Contacts', ContactController::class);
+Route::resource('contacts', ContactController::class);
 
 
 //ESTAS RUTAS SE PONEN ASI CUANDO HACES UN CONTROLADOR NORMAL PERO TIENES QUE ESPECIFICARLOS

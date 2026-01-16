@@ -16,7 +16,7 @@
     <input type="text" name="name">
 
     <label for="nacionalidad">Nacionalidad</label>
-    <input type="text" name="name">
+    <input type="text" name="nacinonality">
 
     <label for="equipo">equipo</label>
     <input type="text" name="equipo">

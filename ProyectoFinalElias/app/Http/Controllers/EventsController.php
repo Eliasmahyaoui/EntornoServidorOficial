@@ -4,61 +4,62 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\view;
+
+
 class EventsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index():view
+
+    public function index():View
     {
-        return view('events.index');
+
+    $events = Event::orderBy('date', 'asc')
+                      ->get();
+
+        return view('events.index', compact('events'));
+
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create():view
     {
         return view('events.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request):view
+
+    public function store(Request $request):View
     {
-        return view('events.store');
+        $event[''] = $request->input('');
+        $event[''] = $request->input('');
+        $event[''] = $request->input('');
+
+        return view('events.store', compact('event'));
+
     }
 
-    /**
-     * Display the specified resource.
-     */
+
     public function show(string $id):view
     {
-        return view('events.show');
+        return view('events.show', compact('event'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit(string $id):view
     {
         return view('events.edit');
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+
     public function update(Request $request, string $id):view
     {
         return view('events.update');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy(string $id):view
+
     {
-        return view('events.destroy');
+
+
+        return view('players.destroy', compact('event'));
     }
 }

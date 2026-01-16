@@ -5,7 +5,8 @@
 @endsection
 
 @section('content')
-    <form action="{{ route('Contacts.store') }}" method="POST">
+<h2>FORMULARIO</h2>
+    <form action="{{ route('contacts.store') }}" method="POST">
         @csrf
 
         <label for="mensaje">MENSAJE:</label>

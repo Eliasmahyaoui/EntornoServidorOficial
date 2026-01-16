@@ -1,26 +1,29 @@
 @extends('layout.layout')
 
 @section('title')
-Eventos
+    Eventos
 @endsection
 
 @section('content')
     <h1>Mostrara una lista de próximos eventos</h1>
-    <ul>
+    <h2>{{ $evento->name }}</h2>
 
-        <li>Próximo partido Alcaraz- Sinner</li>
-        
-        <li>Próximo partido Barbosa - Nadal</li>
-        <li>Próximo partido Sara - Cristina</li>
-        <li>Próximos partidos...</li>
-    </ul>
-        <br>
-      <!--Enlaces para modificar y eliminar el evento SOLO LOGUEADO-ADMIN!-->
-        <a href="">Modificar Evento</a>
-        <a href="">Eliminar eventos</a>
-        <br>
-        <!--Enlaces para marcar me gusta o borrar el me gusta SOLO LOS LOGUEADOS!-->
-        <a href="">Marcar me gusta </a>
-        <a href="">Borrar me gusta</a>
+    <p>{{ $evento->description }}</p>
+
+    <p>
+
+        {{ $evento->date }} - {{ $evento->hour }} <br>
+        {{ $evento->location }} <br>
+        {{ $evento->type }}
+    </p>
+
+
+    <br>
+    <!--Enlaces para modificar y eliminar el evento SOLO LOGUEADO-ADMIN!-->
+    <a href="{{ route('events.edit') }}">Modificar Evento</a>
+    <a href="{{ route('events.destroy') }}">Eliminar eventos</a>
+    <br>
+    <!--Enlaces para marcar me gusta o borrar el me gusta SOLO LOS LOGUEADOS!-->
+    <a href="">Marcar me gusta </a>
+    <a href="">Borrar me gusta</a>
 @endsection
-
