@@ -11,6 +11,7 @@
     <div id="cards">
 
         <img src="{{ asset('imagenes/Carlos_Alcaraz_card (1).png') }}" alt="Carlos Alcaraz">
+        
 
         <img src="{{ asset('imagenes/Rafa_Nadal_card (1).png') }}" alt="Rafa Nadal">
         <img src="{{ asset('imagenes/Alejandro_Davidovivh_card.png') }}" alt="Alejandro_Davidovich">
@@ -23,7 +24,7 @@
     </div>
 
 
-  
+
 
 
 

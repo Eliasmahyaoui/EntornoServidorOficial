@@ -12,5 +12,12 @@
         <a href="{{ route('Contacts.index') }}">Contacto</a>
         <a href="{{ route('dondeEstamos') }}">Donde estamos</a>
 
+        <!--Zona con los enlaces de registro /registro/login/logout/cuenta-->
+        <a href="">Registrate</a>
+        <a href="">Login</a>
+        <a href="">Logout</a>
+        <a href="">Cuenta</a>
+        
+
     </nav>
 </div>
