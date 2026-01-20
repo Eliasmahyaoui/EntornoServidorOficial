@@ -12,14 +12,23 @@
 
     @csrf
 
-    <label for="name">Nombre del jugador</label>
+    <label for="name">Nombrer</label>
     <input type="text" name="name">
 
-    <label for="nacionalidad">Nacionalidad</label>
-    <input type="text" name="nacinonality">
+    <label for="twitter">twitter</label>
+    <input type="text" name="twitter">
 
-    <label for="equipo">equipo</label>
-    <input type="text" name="equipo">
+    <label for="instagram">Instagram</label>
+    <input type="text" name="instagram">
+
+     <label for="twitch">Twitch</label>
+    <input type="text" name="twitch">
+
+     <label for="photo">Photo</label>
+    <input type="text" name="photo">
+
+     <label for="visible">Visible</label>
+    <input type="text" name="visible">
 
     <input type="submit" value="Guardar">
 

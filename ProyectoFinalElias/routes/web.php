@@ -2,9 +2,9 @@
 
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EventsController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\IndexController;
-use App\Http\Controllers\PlayersController;
+use App\Http\Controllers\PlayerController;
 use App\Http\Controllers\LegalController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DondeEstamosController;
@@ -19,8 +19,8 @@ route::get('tienda', StoreController::class)->name('tienda');
 
 
 //RuTAS DE VARIOS RECURSOS
-Route::resource('events', EventsController::class);
-Route::resource('players', PlayersController::class);
+Route::resource('events', EventController::class);
+Route::resource('players', PlayerController::class);
 Route::resource('contacts', ContactController::class);
 
 

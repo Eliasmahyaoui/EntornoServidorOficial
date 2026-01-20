@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\view;
+use App\Models\Event;
 
 
-class EventsController extends Controller
+
+class EventController extends Controller
 {
 
     public function index():View
