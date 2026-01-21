@@ -19,8 +19,7 @@ return new class extends Migration
             $table->string('instagram')->nullable();
             $table->string('twitch')->nullable();
             $table->string('photo');
-            $table->string('visible');
-            $table->string('twitter');
+            $table->boolean('visible')->default(false);
 
         });
     }

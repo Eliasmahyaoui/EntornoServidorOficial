@@ -20,16 +20,14 @@ return new class extends Migration
             $table->string('map')->nullable();
             $table->date('date')->nullable();
             $table->time('hour');
-            $table->enum('type',['official', 'exibition', 'charity'])->default();
+            $table->enum('type', ['official', 'exibition', 'charity'])->default('official');
             $table->string('tags' );
-            $table->boolean('visible')->default();
+            $table->boolean('visible')->default(false);
 
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
+
     public function down(): void
     {
         Schema::dropIfExists('events');

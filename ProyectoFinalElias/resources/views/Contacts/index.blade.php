@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-    <h1>Inicio de contacto</h1>
+    <h1>Contacto</h1>
 @endsection
